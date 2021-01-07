@@ -47,7 +47,7 @@ export const replaceColor = (sourceColor: string | number[], targetColor: string
         sourceLottieColor[1] === obj.c.k[1] &&
         sourceLottieColor[2] === obj.c.k[2]
       ) {
-        obj.c.k = targetLottieColor;
+        obj.c.k = [...targetLottieColor, 1];
       }
     }
 
